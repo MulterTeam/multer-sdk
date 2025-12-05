@@ -1,0 +1,18 @@
+{
+  "name": "@multer/core",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@multer/zk-runtime": "workspace:packages/zk-runtime",
+    "@multer/utils": "workspace:packages/utils"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}

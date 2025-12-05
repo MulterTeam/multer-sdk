@@ -1,0 +1,15 @@
+{
+  "name": "@multer/examples-zk-proof",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@multer/core": "workspace:packages/core"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
