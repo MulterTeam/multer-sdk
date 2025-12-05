@@ -8,12 +8,18 @@
     "build": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "build:wasm": "(cd packages/zk-runtime && bash ./wasm-build.sh)"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
+    "pnpm": "latest",
     "turbo": "latest",
     "typescript": "latest",
-    "vitest": "latest",
-    "pnpm": "latest"
+    "vitest": "latest"
+  }
+  ,
+  "engines": {
+    "node": ">=24.0.0"
   }
 }

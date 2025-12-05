@@ -14,7 +14,7 @@ export class Multer {
     return this.zk.generateProof(input);
   }
 
-  async sendWithProof(proof: any) {
-    return this.solana.sendTxWithProof(proof);
+  async sendWithProof(proof: any, opts?: { programId?: string; simulateOnChain?: boolean }) {
+    return this.solana.sendTxWithProof(proof, opts as any);
   }
 }

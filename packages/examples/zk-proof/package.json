@@ -7,7 +7,7 @@
     "build": "tsc -b"
   },
   "dependencies": {
-    "@multer/core": "workspace:packages/core"
+    "@multer/core": "file:../core"
   },
   "devDependencies": {
     "typescript": "latest"

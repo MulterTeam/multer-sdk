@@ -13,3 +13,9 @@ export const base58Encode = (input: Buffer) => {
     return input.toString('hex');
   }
 };
+
+export const solscanTxUrl = (signature: string, cluster: 'devnet' | 'mainnet' | 'testnet' = 'devnet') =>
+  `https://solscan.io/tx/${signature}?cluster=${cluster}`;
+
+export const solscanProgramUrl = (programId: string, cluster: 'devnet' | 'mainnet' | 'testnet' = 'devnet') =>
+  `https://solscan.io/account/${programId}?cluster=${cluster}`;
